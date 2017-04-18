@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Angular QuickStart</title>
-    <base href="/">
+ <head>
     <meta charset="UTF-8">
+    <title>Animations</title>
+    <base href="/">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styles.css">
 
-    <!-- Polyfill(s) for older browsers -->
+    <!-- Polyfill for Web Animations -->
+    <script src="https://unpkg.com/web-animations-js@2.2.1"></script>
+
+    <!-- Polyfills -->
     <script src="node_modules/core-js/client/shim.min.js"></script>
 
     <script src="node_modules/zone.js/dist/zone.js"></script>
@@ -20,6 +23,12 @@
   </head>
 
   <body>
-    <my-app>Loading AppComponent content here ...</my-app>
+    <h1 style="visibility: hidden;">External H1 Title for E2E test</h1>
+    <hero-team-builder></hero-team-builder>
+    <button style="visibility: hidden;">External button for E2E test</button>
+    <ul style="visibility: hidden;">
+      <li>External list for E2E test</li>
+    </ul>
   </body>
+
 </html>
